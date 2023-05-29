@@ -456,25 +456,30 @@ a.animated-link {
 
 .reason-list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
 .reason {
-	flex: 1 0 auto;
+	flex: 1 0 30%;
 	display: inline-block;
 	padding: 10px;
-	height: 300px; /* Increase the height of the service box */
+	height: 300px;
+	width: 150px;
 	text-align: center;
 	text-decoration: none;
 	margin-bottom: 30px;
-	margin-right: 220px; /* Add spacing between items */
-	backdrop-filter: blur(10px) saturate(150%); /* Adjust the backdrop-filter properties */
-	-webkit-backdrop-filter: blur(10px) saturate(150%); /* Adjust the -webkit-backdrop-filter properties */
+	backdrop-filter: blur(10px) saturate(150%);
+	-webkit-backdrop-filter: blur(10px) saturate(150%);
 	border-radius: 26px;
-	border: 3px solid rgba(255, 255, 255, 0.2); /* Adjust the border opacity */
-	justify-content: space-between;
+	border: 3px solid rgba(255, 255, 255, 0.2);
 	box-sizing: border-box;
-	max-width: 420px;
+}
+
+@media (max-width: 767px) {
+	.reason {
+		flex: 1 0 100%;
+	}
 }
 
 .reason:last-child {
@@ -508,12 +513,33 @@ a.animated-link {
 	text-align: center;
 }
 
-.social-icon {
-    display: inline-block;
-    margin-right: 156px; /* Adaugă o margine între pictograme */
-	padding: 20px;
-	margin-left: 20px;
-}
+.social-icons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .social-icon {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #000;
+  }
+  
+  .social-icon i {
+	margin-right: 10px;
+	font-size: 25px;
+  }
+  
+  @media (max-width: 767px) {
+	.social-icons {
+	  flex-direction: column;
+	}
+	
+	.social-icon {
+	  margin-bottom: 10px;
+	}
+  }
 
 .fa-brands {
 	justify-content:space-between;
