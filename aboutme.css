@@ -581,11 +581,11 @@ body::after {
 		  .aboutme {
 			width: 100%;
 			max-width: 400px;
-			height: 30vh;
 		  }
 		  
 		  .aboutme:last-child {
 			margin-left: -12px;
+			height: 50%;
 		  }
 
 		.aboutme-containers {
