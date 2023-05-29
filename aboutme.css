@@ -569,7 +569,7 @@ body::after {
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			height: 100vh;
+			height: 85vh;
 		  }
 		
 		  .aboutme-lists {
@@ -582,7 +582,6 @@ body::after {
 		  .aboutme {
 			width: 100%;
 			max-width: 400px;
-			height: 300px;
 		  }
 		  
 		  .aboutme:last-child {
