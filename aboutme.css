@@ -582,6 +582,7 @@ body::after {
 		  .aboutme {
 			width: 100%;
 			max-width: 400px;
+			height: 85%;
 		  }
 		  
 		  .aboutme:last-child {
