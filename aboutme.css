@@ -545,7 +545,7 @@ body::after {
 		flex: 1 0 auto;
 		display: block;
 		padding: 0px;
-		height: 500px;
+		height: 450px;
 		text-align: center;
 		text-decoration: none;
 		margin-right: 20px;
@@ -582,7 +582,6 @@ body::after {
 		  .aboutme {
 			width: 100%;
 			max-width: 400px;
-			height: 85%;
 		  }
 		  
 		  .aboutme:last-child {
